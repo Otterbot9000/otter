@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Arizona Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  
-<h2>Otter</h2>
-  
-  <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p id="demo"></p>
+    <main>
+        <section id="intro">
+            <h1>Welcome to Arizona</h1>
+            <p>Experience the beauty of the Southwest with our guided tours.</p>
+            <a href="#" class="btn">Book Now</a>
+        </section>
 
-  
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a family-owned and operated tour company based in Phoenix, Arizona. Our mission is to provide our guests with an unforgettable experience of the Southwest's natural beauty and cultural richness.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="images/gallery1.jpg" alt="Desert landscape">
+                <img src="images/gallery2.jpg" alt="Saguaro cactus">
+                <img src="images/gallery3.jpg" alt="Grand Canyon">
+                <img src="images/gallery4.jpg" alt="Monument Valley">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+<button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Arizona Tours</p>
+    </footer>
 </body>
 </html>
-
